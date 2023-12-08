@@ -1,0 +1,25 @@
+<%- include("header")%>
+<%- include("nav")%>
+
+<div id="all">
+    <h1>This Is ALL</h1>
+        <hr>
+    <% jobs.forEach(function(job){%>
+        <br>
+        <h3><%= job.job_title %></h3>
+        <h3><%= job.job_description%></h3>
+        <h3><%= job.job_place%></h3>
+        <h3><%= job.job_salary%></h3>
+
+
+    <a href="/delete/<%= job.id%>">Delete</a>
+    &nbsp;&nbsp;
+    <a href="/update/<%= job.id%>">Update</a>
+    <hr>
+
+    <%})%>
+</div>
+
+
+
+<%- include("footer")%>

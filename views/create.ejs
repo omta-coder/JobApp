@@ -1,0 +1,35 @@
+<%- include("header")%>
+<%- include("nav")%>
+
+<form action="/create" method="post">
+
+    <h1>Create Job</h1>
+    <br>
+    <input type="text" name="job_title" placeholder="Title">
+    <br><br>
+    <input type="text" name="job_description" placeholder="Description">
+    <br><br>
+    <input type="text" name="job_place" placeholder="Place">
+    <br><br>
+    <input type="number" name="job_salary" placeholder="Salary">
+    <br><br>
+    <input type="number" name="job_experience" placeholder="Experience">
+    <br><br>
+    <input type="text" name="job_designation" placeholder="Designation">
+    <br><br>
+    <input type="number" name="job_applicants" placeholder="Applicants">
+    <br><br>
+    <input type="text" name="job_type" placeholder="JobType">
+    <br><br>
+    <input type="date" name="opening_date" placeholder="OpeningDate">
+    <br><br>
+    <input type="date" name="closing_date" placeholder="ClosingDate">
+    <br><br>
+    <button>Submit</button>
+
+
+</form>
+
+
+
+<%- include("footer")%>

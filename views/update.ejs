@@ -1,0 +1,35 @@
+<%- include("header")%>
+<%- include("nav")%>
+
+<form action="/update/<%= job.id%>" method="post">
+
+    <h1>Update Job</h1>
+    <br>
+    <input value="<%= job.job_title%>" type="text" name="job_title" placeholder="Title">
+    <br><br>
+    <input value="<%= job.job_description %>" type="text" name="job_description" placeholder="Description">
+    <br><br>
+    <input value="<%= job.job_place%>" type="text" name="job_place" placeholder="Place">
+    <br><br>
+    <input value="<%= job.job_salary%>" type="number" name="job_salary" placeholder="Salary">
+    <br><br>
+    <input value="<%= job.job_experience %>" type="number" name="job_experience " placeholder="Experience">
+    <br><br>
+    <input value="<%= job.job_designation%>" type="text" name="job_designation" placeholder="Designation">
+    <br><br>
+    <input value="<%= job.job_applicants %>" type="number" name="job_applicants " placeholder="Applicants">
+    <br><br>
+    <input value="<%= job.job_type%>" type="text" name="job_type" placeholder="JobType">
+    <br><br>
+    <input value="<%= job.opening_date%>" type="date" name="opening_date" placeholder="OpeningDate">
+    <br><br>
+    <input value="<%= job.closing_date%>" type="date" name="closing_date" placeholder="ClosingDate">
+    <br><br>
+    <button>Update</button>
+
+
+</form>
+
+
+
+<%- include("footer")%>
